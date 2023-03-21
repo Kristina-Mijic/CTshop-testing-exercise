@@ -1,0 +1,18 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --headed --no-exit --spec 'cypress/e2e/practice.cy.js' --reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.8.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}

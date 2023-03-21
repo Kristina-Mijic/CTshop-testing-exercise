@@ -1,0 +1,102 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-21T15:34:27.177Z",
+    "end": "2023-03-21T15:34:42.047Z",
+    "duration": 14870,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "36735312-99c5-49cb-8612-ee08726bc7b9",
+      "title": "",
+      "fullFile": "cypress/e2e/practice.cy.js",
+      "file": "cypress/e2e/practice.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "53ba6f88-c3c1-4507-be71-a13ca596878c",
+          "title": "CTshop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "CTshop",
+              "fullTitle": "CTshop CTshop",
+              "timedOut": null,
+              "duration": 13258,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.ctshop.rs/');\ncy.closeAdd();\ncy.acceptCookies();\ncy.clickLinkFromMenu('laptopovi-tableti', 'laptopovi');\n//otvorena nova stranica:\ncy.get('#popup-smart-root-54364').shadow().find('#PsCloseButton').click();\ncy.checkFilter('13.6\"');\ncy.get('#products-list').find('div.ganalytics.item').should('have.length', 3);",
+              "err": {},
+              "uuid": "064026ba-dcf0-408b-80e0-08d8019f6a6b",
+              "parentUUID": "53ba6f88-c3c1-4507-be71-a13ca596878c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "064026ba-dcf0-408b-80e0-08d8019f6a6b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13258,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reporterFilename": "Test"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
